@@ -1,0 +1,26 @@
+[
+    {
+        "flavor": "с фуа-гра",
+        "portions": 10,
+        "mice": 0,
+        "weight": 0.5,
+        "comment": "Незабываемая фуа-гра",
+        "disabled": false
+    },
+    {
+        "flavor": "с рыбой",
+        "portions": 40,
+        "mice": 2,
+        "weight": 2,
+        "comment": "Головы щучьи с чесноком да свежайшая сёмгушка.",
+        "disabled": false
+    },
+    {
+        "flavor": "с курой",
+        "portions": 100,
+        "mice": 5,
+        "weight": 5,
+        "comment": "Пернатая кура.",
+        "disabled": true
+    }
+]
