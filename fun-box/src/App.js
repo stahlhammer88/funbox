@@ -10,8 +10,7 @@ class App extends Component {
     }
   }
   render() {
-    return (
-      <main className="wrapper">
+    return (      
         <section className="products">
             <h1 className="products__header">Ты сегодня покормил кота?</h1>
             <div className="products__container">
@@ -19,8 +18,7 @@ class App extends Component {
                 return <Item product={product} key={i} />
               })}         
             </div>
-        </section>
-      </main>     
+        </section>      
     );
   }
 }

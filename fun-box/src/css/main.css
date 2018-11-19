@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Exo";
-  src: url("../fonts/Exo2.0-Thin.otf") format("opentype");
-}
 html, body, ul, li, p {
   margin: 0;
   padding: 0;
@@ -12,20 +8,19 @@ html, body {
 }
 
 html {
-  background: url("../img/back.png");
-  font-family: "Exo", Arial, Helvetica, sans-serif;
+  font-family: "Exo 2", Arial, Helvetica, sans-serif;
 }
 
 body {
-  z-index: -2;
-  position: relative;
+  background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0), #000), url("../img/back.png");
+  background-repeat: no-repeat, repeat;
+  background-position: right, top left;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0), #000);
   min-height: 100%;
 }
 
@@ -83,9 +78,9 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 8px;
-  left: -33px;
-  border-width: 33px;
+  top: 7px;
+  left: -34px;
+  border-width: 34px;
   border-style: solid;
   border-color: transparent;
   transform: rotate(45deg);
@@ -94,18 +89,18 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 12px;
-  left: -29px;
-  border-width: 29px;
-  border-style: solid;
-  border-color: transparent transparent transparent #fff;
+  top: 2px;
+  left: -25px;
   transform: rotate(45deg);
-  z-index: 1;
+  width: 31px;
+  height: 58px;
+  background: #fff;
 }
 .item__body {
   position: relative;
+  bottom: 1px;
   width: 100%;
-  height: 435px;
+  height: 436px;
   border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
@@ -131,6 +126,8 @@ body {
 .item__tag {
   margin-top: 20px;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 .item__description {
   font-size: 14px;
