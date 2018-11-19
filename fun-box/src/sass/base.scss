@@ -1,0 +1,43 @@
+@font-face {
+ font-family: "Exo";
+ src: url("../fonts/Exo2.0-Thin.otf") format("opentype")        
+}
+
+$default-col: #1698d9;
+$hover-col: #2ea8e6;
+$selected-col: #d91667;
+$selected-hover-col: #e62e7a;
+$disabled-col: #b3b3b3;
+
+html, body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    background: url('../img/back.png');    
+    font-family: "Exo", Arial, Helvetica, sans-serif;
+}
+
+body {    
+    z-index: -2;
+    position: relative; 
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0), #000 );   
+    min-height: 100%;
+}
+
+.pseudo {
+    color: $default-col;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+}

@@ -20,7 +20,7 @@ class App extends Component {
               })}         
             </div>
         </section>
-    </main>     
+      </main>     
     );
   }
 }
