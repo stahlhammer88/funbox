@@ -10,15 +10,12 @@ class App extends Component {
     }
   }
   render() {
-    return (      
-        <section className="products">
-            <h1 className="products__header">Ты сегодня покормил кота?</h1>
-            <div className="products__container">
-              {this.state.products.map((product, i) => {
-                return <Item product={product} key={i} />
-              })}         
-            </div>
-        </section>      
+    return (                          
+        <div className="products__container">
+          {this.state.products.map((product, i) => {
+            return <Item product={product} key={i} />
+          })}         
+        </div>              
     );
   }
 }

@@ -9,26 +9,23 @@ html, body, ul, li, p {
     padding: 0;
 }
 
-html, body {
-    height: 100%;
+html, body {    
+    min-height: 100vh;
 }
 
-html {        
-    font-family: "Exo 2", Arial, Helvetica, sans-serif;    
-}
-
-body {
-    background-image:linear-gradient(to bottom, #000, rgba(0,0,0,0), #000 ), url('../img/back.png');
-    background-repeat: no-repeat, repeat;
-    background-position: right, top left;
-}
-
-.wrapper {
+html {    
+    font-family: "Exo 2", Arial, Helvetica, sans-serif;
     display: flex;
+    flex-direction: column;
+}
+
+body {    
+    position: relative; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;            
-    min-height: 100%;
-    
+    justify-content: center;        
+    background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0), #000 ), url('../img/back.png');       
 }
 
 .pseudo {
